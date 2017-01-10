@@ -12,6 +12,7 @@ const app = module.exports = koa();
 app.use(logger());
 
 app.use(route.get('/aframe/:image', images.aframe));
+app.use(route.get('/helloworld', images.helloworld));
 
 // Serve static files
 app.use(serve(path.join(__dirname, 'public')));
