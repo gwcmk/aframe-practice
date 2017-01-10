@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<a-scene>
+  <a-assets>
+    <img src="{{ path }}" id="vr-test">
+    <img src="../img/logo.png" id="logo">
+  </a-assets>
+  <a-sky src="#vr-test"></a-sky>
+  <a-curvedimage src="#logo" position="0 0 0"></a-curvedimage>
+</a-scene>
+{% endblock %}
