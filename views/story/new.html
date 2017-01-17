@@ -1,0 +1,19 @@
+{% extends '../layout.html' %}
+{% block content %}
+	<div class="container">
+		<h1>new story</h1>
+		<form method="post" action="/story">
+			<div class="row">
+				<div class="six columns">
+				  <label for="title">Title</label>
+				  <input class="u-full-width" type="text" placeholder="Title" id="title" name="title">
+				  <label for="author">Author</label>
+				  <input class="u-full-width" type="text" placeholder="Author" id="author" name="author">
+				  <label for="image">Image Link</label>
+				  <input class="u-full-width" type="text" placeholder="" id="image" name="image">
+				  <input class="button-primary" type="submit" value="Submit">
+			  </div>
+		  </div>
+		</form>
+	</div>
+{% endblock %}

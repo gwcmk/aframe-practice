@@ -13,6 +13,9 @@ app.use(logger());
 
 app.use(route.get('/aframe/:image', images.aframe));
 app.use(route.get('/helloworld', images.helloworld));
+app.use(route.get('/story/new', images.newStory));
+app.use(route.get('/story/:id', images.show));
+app.use(route.post('/story', images.create));
 
 // Serve static files
 app.use(serve(path.join(__dirname, 'public')));
