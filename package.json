@@ -7,7 +7,7 @@
     "test": "mocha"
   },
   "dependencies": {
-    "co-body": "^4.0.0",
+    "co-body": "^4.2.0",
     "co-views": "^2.1.0",
     "koa": "^1.2.0",
     "koa-compress": "^1.0.6",
